@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/blackjack.css">
+    <title>Document</title>
+</head>
+<body class="bg-green-800">
+    <img class="img" src="blackjack.jpg" >
+    <div class="">
+        <div class="div">
+            <div class="border-4 border-transparent shadow-2xl w-1/2 mt-40 bg-green-900 my-4 rounded">
+                <h1 class="text-bold text-white text-7xl text-center py-20 ">THE CARDS GAME </h1>
+                <h1 class="text-bold text-3xl text-white text-center py-3" id="card1">CARD 1 : </h1>
+                <h1 class="text-bold text-3xl text-white text-center py-3"id="card2">CARD 2 : </h1>
+                <h1 class="text-bold text-3xl text-white text-center py-7" id="sum" >SUM : </h1>
+                <h1 class="text-bold text-3xl text-white text-center py-7" id="new_card" ></h1>
+
+                <div class="grid">
+                    <button class="rounded bg-green-700 font-bold text-white py-4 px-5 text-2xl hover:bg-green-600 hover:text-white mx-7 my-2 " onclick="draw()"> DRAW </button>
+                    <button class="rounded bg-green-700 font-bold text-white py-4 px-5 text-xl hover:bg-green-600 hover:text-white mx-7 my-2" onclick="drawthird()"> DRAW THIRD CARD </button>
+                    <button class="rounded bg-green-700 font-bold text-white py-4 px-5 text-2xl hover:bg-green-600 hover:text-white mx-7 mt-2 mb-5" onclick="window.location.reload
+                    ()"> PLAY AGAIN </button>
+                </div> 
+            </div>           
+        </div>
+        <div class="div">
+            <div class="bg-yellow-600 shadow-2xl w-1/2 my-4 rounded">
+                <p class="text-xl text-yellow-800 text-semibold my-3 mx-2">NOTE: The sum of the cards if equals to 21 then the person wins,the player can draw one more card if sum is less than 21 but if the sum exceeds 21 the player loses </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/blackjack.js"></script>
+</body>
+</html>
